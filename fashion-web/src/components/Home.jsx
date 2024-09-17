@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center">
+    <div className="min-h-screen flex flex-col justify-center ">
       {/* Content Section */}
       <h1>Discovering and Defining Your Own Fashion</h1>
       <p>
