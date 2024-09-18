@@ -1,5 +1,9 @@
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Navbar from "./components/Navbar"
+import Home from "./components/Home"
+import Shop from "./components/Shop"
+import Collections from "./components/Collections"
+import Features from "./components/Features"
+import Products from "./components/Products"
 
 const App = () => {
   return (
@@ -9,8 +13,22 @@ const App = () => {
       <div id="home">
         <Home />
       </div>
-    </div>
-  );
-};
 
-export default App;
+      <div id="shop">
+        <Shop />
+      </div>
+
+      <Collections />
+
+      <div id="features">
+        <Features />
+      </div>
+
+      <div id="products">
+        <Products />
+      </div>
+    </div>
+  )
+}
+
+export default App
