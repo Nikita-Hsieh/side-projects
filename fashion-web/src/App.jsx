@@ -4,6 +4,8 @@ import Shop from "./components/Shop"
 import Collections from "./components/Collections"
 import Features from "./components/Features"
 import Products from "./components/Products"
+import Review from "./components/Review"
+import Footer from "./components/Footer"
 
 const App = () => {
   return (
@@ -26,6 +28,14 @@ const App = () => {
 
       <div id="products">
         <Products />
+      </div>
+
+      <div id="review">
+        <Review />
+      </div>
+
+      <div id="footer">
+        <Footer />
       </div>
     </div>
   )
