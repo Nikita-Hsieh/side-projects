@@ -1,19 +1,19 @@
-import { useState } from "react";
-import { Link } from "react-scroll";
-import { FaUser, FaShoppingCart } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
-import { RiMenu2Line } from "react-icons/ri";
+import { useState } from "react"
+import { Link } from "react-scroll"
+import { FaUser, FaShoppingCart } from "react-icons/fa"
+import { AiOutlineClose } from "react-icons/ai"
+import { RiMenu2Line } from "react-icons/ri"
 
 const Navbar = () => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(false)
 
   const handleChange = () => {
-    setMenu(!menu);
-  };
+    setMenu(!menu)
+  }
 
   const closeMenu = () => {
-    setMenu(false);
-  };
+    setMenu(false)
+  }
 
   return (
     <div>
@@ -86,12 +86,10 @@ const Navbar = () => {
             {/* nav icons */}
             <div className="flex items-center gap-5">
               <FaUser size={25} className="cursor-pointer text-DarkColor" />
-              <div className="text-DarkColor relative">
-                <FaShoppingCart size={25} className="cursor-pointer" />
-                <div className="absolute top-[-15px] right-[-10px] bg-red-600 w-[22px] h-[20px] rounded-full text-white text-sm grid place-items-center">
-                  0
-                </div>
-              </div>
+              <FaShoppingCart
+                size={25}
+                className="cursor-pointer text-DarkColor"
+              />
             </div>
 
             {/* menu icons */}
@@ -104,11 +102,11 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* mobile meni section */}
+          {/* mobile menu section */}
           <div
             className={`${
               menu ? "translate-x-0" : "-translate-x-full"
-            } lg:hidden flex flex-col absolute bg-SecondaryColor text-black left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300 `}
+            } lg:hidden flex flex-col absolute bg-SecondaryColor text-black left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
           >
             <Link
               to="home"
@@ -159,7 +157,7 @@ const Navbar = () => {
         </section>
       </header>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
