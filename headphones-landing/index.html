@@ -16,20 +16,25 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
-          <img src="./img/logo.webp" width="50px" style="border-radius: 99px;" alt="" />
+          <img
+            src="./img/logo.webp"
+            width="50px"
+            style="border-radius: 99px"
+            alt=""
+          />
         </a>
         <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list ">
+          <ul class="nav__list">
             <li class="nav__item">
               <a href="#home" class="nav__link">Home</a>
             </li>
-            <li class="nav__item"></li>
+            <li class="nav__item">
               <a href="#specs" class="nav__link">Specs</a>
             </li>
-            <li class="nav__item"></li>
+            <li class="nav__item">
               <a href="#case" class="nav__link">Case</a>
             </li>
-            <li class="nav__item"></li>
+            <li class="nav__item">
               <a href="#products" class="nav__link">Products</a>
             </li>
           </ul>
@@ -39,10 +44,52 @@
         </div>
 
         <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-function-line"></i>          
+          <i class="ri-function-line"></i>
         </div>
       </nav>
     </header>
+
+    <main class="main">
+      <!-- Home -->
+      <section class="home section" id="home">
+        <div class="home__container container .grid">
+          <div>
+            <img src="./img/home-img.png" alt="" class="home__img" />
+          </div>
+
+          <div class="home__data">
+            <div class="home__header">
+              <h1 class="home__title">One ear</h1>
+              <h2 class="home__subtitle">Beats 3</h2>
+            </div>
+
+            <div class="home__footer">
+              <h3 class="home__title-description">Overview</h3>
+              <p class="home__description">
+                Lsimus necessitatibus consequuntur soluta iusto! Dolore
+                excepturi rem maiores doloribus. Perferendis obcaecati quibusdam
+                sequi doloribus? Cumque, dolor!
+              </p>
+              <a href="#" class="button button--flex">
+                <span class="button--flex">
+                  <i class="ri-shopping-bag-line button__icon"></i>Add to bag
+                </span>
+                <span class="home__price">$299</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sponsor -->
+      <section class="sponsor section"></section>
+
+      <!-- Specs -->
+      <section class="specs section grid" id="specs"></section>
+
+      <!-- Case -->
+      <section class="case section grid" id="case"></section>
+    </main>
     <script src="./main.js"></script>
   </body>
 </html>
