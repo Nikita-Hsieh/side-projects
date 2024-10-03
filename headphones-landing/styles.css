@@ -220,6 +220,11 @@
   top: 0;
 }
 
+/* Scroll to change background */
+.scroll-header {
+  background-color: var(--body-color);
+}
+
 /* Home */
 .home__img {
   width: 250px;
