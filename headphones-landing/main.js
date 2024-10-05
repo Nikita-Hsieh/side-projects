@@ -32,5 +32,19 @@ function scrollHeader() {
 
   if (this.scrollY >= 50) header.classList.add("scroll-header")
 }
-
 window.addEventListener("scroll", scrollHeader)
+
+//Scoll Up
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up")
+  if (this.scrollY >= 200) scrollUp.classList.add("show-scroll")
+  else scrollUp.classList.remove("show-scroll")
+}
+window.addEventListener("scroll", scrollUp)
+
+//Scroll Section Active Link
+const sections = document.querySelectorAll("section[id]")
+
+function scrollActive() {
+  const scrollY = window.pageXOffset
+}
