@@ -2,7 +2,7 @@
 
 :root {
   --header-height: 3rem;
-  /*========== Colors ==========*/
+  /* Colors */
   --hue-color: 206;
   --black-color: hsl(var(--hue-color), 4%, 4%);
   --black-color-alt: hsl(var(--hue-color), 4%, 8%);
@@ -459,6 +459,7 @@ img {
 .footer__container {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
+  padding: 15%;
 }
 
 .footer__logo {
