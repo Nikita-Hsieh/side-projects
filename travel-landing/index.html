@@ -8,7 +8,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="" />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -125,10 +126,10 @@
           Discover the most <br />
           attractive places
         </h2>
-        <div class="discover__container container">
-          <div>
+        <div class="discover__container container swiper-container">
+          <div class="swiper-wrapper">
             <!-- Discover 1 -->
-            <div class="discover__card">
+            <div class="discover__card swiper-slide">
               <img
                 src="assests/img/discover1.jpg"
                 alt=""
@@ -141,7 +142,7 @@
             </div>
 
             <!-- Discover 2 -->
-            <div class="discover__card">
+            <div class="discover__card swiper-slide">
               <img
                 src="assests/img/discover2.jpg"
                 alt=""
@@ -154,7 +155,7 @@
             </div>
 
             <!-- Discover 3 -->
-            <div class="discover__card">
+            <div class="discover__card swiper-slide">
               <img
                 src="assests/img/discover3.jpg"
                 alt=""
@@ -167,7 +168,7 @@
             </div>
 
             <!-- Discover 4 -->
-            <div class="discover__card">
+            <div class="discover__card swiper-slide">
               <img
                 src="assests/img/discover4.jpg"
                 alt=""
@@ -191,6 +192,8 @@
       <!-- Places -->
       <section class="place section" id="place"></section>
     </main>
+
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
